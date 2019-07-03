@@ -9,21 +9,29 @@
  */
 
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
-import { AppBar, Scaffold } from '@native-base';
+import { StyleSheet, View } from 'react-native';
+import { Button, Text } from '@native-base';
 
 export default class App extends Component {
   render() {
     return (
-      <Scaffold appBar={<AppBar title='test' />}>
+      <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.tsx</Text>
-      </Scaffold>
+        <Button style={{ alignSelf: null }}>
+          <Text>Some text</Text>
+        </Button>
+      </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
