@@ -18,7 +18,7 @@ export default class App extends Component {
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.tsx</Text>
-        <Button style={{ alignSelf: null }}>
+        <Button>
           <Text>Some text</Text>
         </Button>
       </View>
@@ -34,11 +34,9 @@ const styles = StyleSheet.create({
   },
   welcome: {
     fontSize: 20,
-    textAlign: 'center',
     margin: 10
   },
   instructions: {
-    textAlign: 'center',
     color: '#333333',
     marginBottom: 5
   }
